@@ -1,6 +1,7 @@
 {
   "pages": [
-    "pages/index/index"
+    "pages/index/index",
+    "pages/list/list"
   ],
   "window": {
     "backgroundTextStyle": "dark",
@@ -8,9 +9,12 @@
     "navigationBarTitleText": "CYWeather",
     "navigationBarTextStyle": "black",
     "enablePullDownRefresh": true
-    
-
   },
-  "sitemapLocation": "sitemap.json"
+  "sitemapLocation": "sitemap.json",
 
+  "permission": {
+    "scope.userLocation": {
+    "desc": "May I use your location?"
+    }
+  }
 }

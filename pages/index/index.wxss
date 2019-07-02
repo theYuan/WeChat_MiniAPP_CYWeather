@@ -14,8 +14,36 @@
 
 .weather-wrapper{
   position: relative;
-  padding-top: 174rpx;
+  padding-top: 20rpx;
   padding-bottom: 250rpx;
+}
+
+.location-wrapper{
+    margin-bottom: 60 rpx;
+    font-size: 30rpx;
+    line-height: 42rpx;
+}
+
+.location{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.location-icon{
+  margin-right: 10rpx;
+  width: 21rpx;
+  height: 30rpx;
+}
+
+.location-text{
+    opacity:0.5;
+}
+.location-tips{
+    margin-top: 10 rpx;
+    line-height: 42 rpx;
+    text-align: center;
+    opacity: 0.5;
 }
 
 .weather-bg{
@@ -35,9 +63,11 @@
 }
 
 .timetips-icon {
-  margin-right: 10rpx;
+  margin-right: 20rpx;
   width: 36rpx;
   height: 28rpx;
+  margin-bottom: 45rpx;
+  
 }
 
 .timetips-text {
@@ -73,4 +103,29 @@
   margin-top: 46rpx;
   font-size: 40rpx;
   line-height:56rpx;
+}
+
+.day-weather{
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  left: 40rpx;
+  right:40rpx;
+  height: 90rpx;
+  border-top: 1px solid rgba(0,0,0,0.1);
+  font-size: 30rpx;
+  line-height: 42rpx;
+  opacity: 0.5;
+}
+
+.temp-text{
+  flex-grow: 1;
+  padding-left: 30rpx;
+  text-align: right;
+}
+
+.arrow-icon{
+  width: 13rpx;
+  height: 24rpx;
 }
