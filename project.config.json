@@ -13,8 +13,8 @@
 		"checkInvalidKey": true
 	},
 	"compileType": "miniprogram",
-	"libVersion": "2.6.5",
-	"appid": "wx75c77ddbbfa81430",
+	"libVersion": "2.0.4",
+	"appid": "wx1ab96d88672df2cd",
 	"projectname": "CYWeather",
 	"debugOptions": {
 		"hidedInDevtools": []

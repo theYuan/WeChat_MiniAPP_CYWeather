@@ -1,3 +1,9 @@
+.location-tips{
+    margin-top: 10 rpx;
+    height: 42 rpx;
+    text-align: center;
+}
+
 .temp {
   text-align: center;
   font-size: 200rpx;
@@ -22,6 +28,9 @@
     margin-bottom: 60 rpx;
     font-size: 30rpx;
     line-height: 42rpx;
+    color: rgba(0, 0, 0, 0.5)!important;
+    border: none!important;
+    padding: 0!important;
 }
 
 .location{
@@ -38,12 +47,6 @@
 
 .location-text{
     opacity:0.5;
-}
-.location-tips{
-    margin-top: 10 rpx;
-    line-height: 42 rpx;
-    text-align: center;
-    opacity: 0.5;
 }
 
 .weather-bg{

@@ -7,7 +7,8 @@ Page({
    * 页面的初始数据
    */
   data: {
-    weekWeather: [1,2,3,4,5,6,7]
+    weekWeather: [1,2,3,4,5,6,7],
+    city: "北京市"
   },
 
   /**
@@ -22,7 +23,10 @@ Page({
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad() {
+  onLoad(options) {
+    this.setData({
+      city: options.city
+    })
     this.getWeekWeather()
   },
 
@@ -32,7 +36,7 @@ Page({
     wx.request({
       url: 'https://test-miniprogram.com/api/weather/future',
       data: {
-        city: '广州市',
+        city: this.data.city,
         time: timestamp
       },
 
@@ -57,7 +61,7 @@ Page({
         {   day: dayMap[date.getDay()],
             date: `${date.getFullYear()}-${date.getMonth()+1}-${date.getDate()}`,
             iconPath: '/images/' + result[i].weather + '-icon.png',
-            temp: `${result[i].minTemp}° — ${result[i].maxTemp}°`
+            temp: `${result[i].minTemp}° — ${result[i].maxTemp}`
         }
       )
     }
